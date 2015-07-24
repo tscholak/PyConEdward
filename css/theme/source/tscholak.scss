@@ -1,0 +1,94 @@
+/**
+ * A theme for my reveal.js presentations.
+ *
+ * This theme is Copyright (C) 2015 Torsten Scholak, https://github.com/tscholak. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../../../reveal.js/css/theme/template/mixins";
+@import "../../../reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import
+  url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic|Source+Code+Pro:200,300,400,500,600,700,900)
+;
+@font-face {
+  font-family: 'charterbold_italic';
+  src: url('/lib/font/charter_bold_italic-webfont.eot');
+  src: url('/lib/font/charter_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/lib/font/charter_bold_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'charterbold';
+  src: url('/lib/font/charter_bold-webfont.eot');
+  src: url('/lib/font/charter_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/lib/font/charter_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'charteritalic';
+  src: url('/lib/font/charter_italic-webfont.eot');
+  src: url('/lib/font/charter_italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/lib/font/charter_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'charterregular';
+  src: url('/lib/font/charter_regular-webfont.eot');
+  src: url('/lib/font/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/lib/font/charter_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// Override theme settings (see ../../../reveal.js/css/theme/template/settings.scss)
+$backgroundColor: #fff;
+$mainFont: 'charterregular', serif;
+$mainFontSize: 1.8rem;
+$mainColor: #000;
+$headingFont: 'Fira Sans', sans-serif;
+$headingColor: #000;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$headingFontWeight: 700;
+$linkColor: #0048ab;
+$linkColorHover: #4c81c9;
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+
+
+// Theme template ------------------------------
+@import "../../../reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+
+
+// Override theme css (see ../../../reveal.js/css/theme/template/theme.scss)
+.reveal .progress {
+  background: #eaeef3;
+}
+.reveal pre {
+  font-size: 0.75em;
+  font-family: "Source Code Pro", monospace, sans-serif;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: none;
+}
+.reveal code {
+  font-family: "Source Code Pro", monospace, sans-serif;
+}
+.reveal pre code {
+  background: #eaeef3;
+  color: #00193a;
+}
