@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Torsten Scholak: The Title</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="">
+		<meta name="author" content="Torsten Scholak">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -25,7 +25,7 @@
 			var link = document.createElement( 'link' );
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/theme/print/pdf.css' : 'css/theme/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
@@ -41,93 +41,20 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>The Title</h1>
-					<h3>The Presentation's Subtitle</h3>
-					<p>
-						<a href="http://tscholak.github.io">Torsten Scholak</a> / <a href="http://twitter.com/tscholak">@tscholak</a>
-					</p>
-					<p>January 1, 2015</p>
-				</section>
-
-				<section>
-					<p>html slide</p>
-					<h2>Code Example</h2>
-					<p>
-						$L$ Lorem $x^2$ <a href="https://en.wikipedia.org/wiki/Lorem_ipsum#Example_text">ipsum</a>.
-					</p>
-					<p>
-						$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,\mathrm{e}^{2 \pi i \xi x} \,\mathrm{d}\xi$
-					</p>
-          <pre><code data-trim>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-
-					<aside class="notes">
-          Here are some speaker notes.
-
-          This cannot <em>contain markdown</em>.
-          </aside>
-				</section>
-
-				<section data-markdown>
-				  <script type="text/template">
-markdown slide
-
-## Code Example
-
-$L$ Lorem $x^2$ [ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum#Example_text).
-
-$f(x) = \int\_{-\infty}^\infty \hat f(\xi)\,\mathrm{e}^{2 \pi i \xi x} \,\mathrm{d}\xi$
-
-```javascript
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-```
-
-<aside class="notes">
-Here are some speaker notes.
-
-This can *contain markdown*.
-</aside>
-					</script>
+					<h2>The Title</h2>
+          <p>
+            <a href="http://tscholak.github.io">Torsten Scholak</a>
+          </p>
+          <p>
+            <small>twitter <a href="http://twitter.com/tscholak">@tscholak</a>  |  github  <a href="http://github.com/tscholak">tscholak</a>  |  blog <a href="http://tscholak.github.io">tscholak.github.io</a></small>
+          </p>
+					<p style="margin-top: 2em;"><small>January 1, 2016</small></p>
 				</section>
 
 				<section data-markdown="content.md"
 								 data-separator="^\n\n\n"
 								 data-separator-vertical="^\n\n"
 								 data-separator-notes="^Note:">
-				</section>
-
-				<section>
-					<h2>THANK YOU!</h2>
-					  <aside class="notes">
-							Note example.
-						</aside>
 				</section>
 
 			</div>
@@ -150,7 +77,7 @@ This can *contain markdown*.
 
 				transition: 'slide',
 				transitionSpeed: 'fast',
-				backgroundTransition: 'none',
+				backgroundTransition: 'slide',
 
 				// Optional reveal.js plugins
 				dependencies: [
