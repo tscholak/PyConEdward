@@ -1,7 +1,7 @@
 /**
  * A theme for my reveal.js presentations.
  *
- * This theme is Copyright (C) 2015 Torsten Scholak, https://github.com/tscholak. It is MIT licensed.
+ * This theme is Copyright (C) 2016 Torsten Scholak, https://github.com/tscholak. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
 
@@ -14,57 +14,57 @@
 
 
 // Include theme-specific fonts
-@import
-  url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic|Source+Code+Pro:200,300,400,500,600,700,900)
-;
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
 @font-face {
   font-family: 'charterbold_italic';
-  src: url('/lib/font/charter_bold_italic-webfont.eot');
-  src: url('/lib/font/charter_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/lib/font/charter_bold_italic-webfont.woff') format('woff');
+  src: url("/lib/font/charter_bold_italic-webfont.eot");
+  src: url("/lib/font/charter_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_bold_italic-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
   font-family: 'charterbold';
-  src: url('/lib/font/charter_bold-webfont.eot');
-  src: url('/lib/font/charter_bold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/lib/font/charter_bold-webfont.woff') format('woff');
+  src: url("/lib/font/charter_bold-webfont.eot");
+  src: url("/lib/font/charter_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_bold-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
   font-family: 'charteritalic';
-  src: url('/lib/font/charter_italic-webfont.eot');
-  src: url('/lib/font/charter_italic-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/lib/font/charter_italic-webfont.woff') format('woff');
+  src: url("/lib/font/charter_italic-webfont.eot");
+  src: url("/lib/font/charter_italic-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_italic-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 @font-face {
   font-family: 'charterregular';
-  src: url('/lib/font/charter_regular-webfont.eot');
-  src: url('/lib/font/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/lib/font/charter_regular-webfont.woff') format('woff');
+  src: url("/lib/font/charter_regular-webfont.eot");
+  src: url("/lib/font/charter_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
+@import url(http://cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css);
 
 
 
 // Override theme settings (see ../../../reveal.js/css/theme/template/settings.scss)
-$backgroundColor: #fff;
+$backgroundColor: #000;
 $mainFont: 'charterregular', serif;
 $mainFontSize: 1.8rem;
-$mainColor: #000;
+$mainColor: #fff5df;
+$headingMargin: 0 0 20px 0;
 $headingFont: 'Fira Sans', sans-serif;
-$headingColor: #000;
+$headingColor: #fef200;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $headingFontWeight: 700;
-$linkColor: #0048ab;
-$linkColorHover: #4c81c9;
-$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$heading1Size: 3.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1em;
+$heading1TextShadow: none;
+$blockMargin: 20px;
+$linkColor: #0cbff2;
+$linkColorHover: #79dcf8;
+$selectionBackgroundColor: rgba(255, 255, 255, 1);
 
 
 
@@ -75,20 +75,74 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 
 // Override theme css (see ../../../reveal.js/css/theme/template/theme.scss)
+::selection {
+  color: $linkColor;
+  background: rgba(255, 255, 255, 1);
+}
+.reveal .slides {
+  text-align: left;
+}
+.reveal ul {
+  list-style-type: none;
+}
+.reveal ul ul {
+  list-style-type: none;
+}
+.reveal ul ul ul {
+  list-style-type: none;
+}
+.reveal blockquote {
+  width: 100%;
+}
 .reveal .progress {
-  background: #eaeef3;
+  background: #000;
 }
 .reveal pre {
+  width: 100%;
   font-size: 0.75em;
-  font-family: "Source Code Pro", monospace, sans-serif;
-  line-height: 1.2em;
-  word-wrap: break-word;
-  box-shadow: none;
+  font-family: Hack, monospace, sans-serif;
+  line-height: 1.8em;
+  box-shadow: none; 
 }
 .reveal code {
-  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: 0.85em;
+  font-family: Hack, monospace, sans-serif;
 }
 .reveal pre code {
-  background: #eaeef3;
-  color: #00193a;
+  padding: 25px;
+  max-height: 500px;
+  background: #000;
+  color: $mainColor;
+  border: 4px solid $linkColor;
+}
+.reveal table {
+  float: left;
+}
+.reveal section img {
+  background: rgba(0, 0, 0, 0);
+  border: 4px solid $linkColor;
+  box-shadow: none;
+}
+.reveal a:hover img {
+  background: rgba(0, 0, 0, 0);
+  border-color: $linkColorHover;
+  box-shadow: none;
+}
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #087c9d;
+}
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #087c9d;
+}
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #087c9d;
+}
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #087c9d;
+}
+.reveal .progress {
+  background: #000;
+}
+.reveal .slide-number {
+  color: $linkColor;
 }
