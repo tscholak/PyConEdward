@@ -14,43 +14,18 @@
 
 
 // Include theme-specific fonts
-@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
-@font-face {
-  font-family: 'charterbold_italic';
-  src: url("/lib/font/charter_bold_italic-webfont.eot");
-  src: url("/lib/font/charter_bold_italic-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_bold_italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'charterbold';
-  src: url("/lib/font/charter_bold-webfont.eot");
-  src: url("/lib/font/charter_bold-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'charteritalic';
-  src: url("/lib/font/charter_italic-webfont.eot");
-  src: url("/lib/font/charter_italic-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_italic-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'charterregular';
-  src: url("/lib/font/charter_regular-webfont.eot");
-  src: url("/lib/font/charter_regular-webfont.eot?#iefix") format("embedded-opentype"), url("/lib/font/charter_regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 @import url(http://cdn.jsdelivr.net/font-hack/2.010/css/hack.min.css);
 
 
 
 // Override theme settings (see ../../../reveal.js/css/theme/template/settings.scss)
-$backgroundColor: #000;
-$mainFont: 'charterregular', serif;
+$backgroundColor: #263238;
+$mainFont: 'PragmataPro', serif;
 $mainFontSize: 1.8rem;
-$mainColor: #fff5df;
+$mainColor: #c3cee3;
 $headingMargin: 0 0 20px 0;
-$headingFont: 'Fira Sans', sans-serif;
-$headingColor: #fef200;
+$headingFont: 'PragmataPro', sans-serif;
+$headingColor: #ffeb95;
 $headingTextShadow: none;
 $headingTextTransform: none;
 $headingFontWeight: 700;
@@ -62,8 +37,8 @@ $heading3Size: 1.55em;
 $heading4Size: 1em;
 $heading1TextShadow: none;
 $blockMargin: 20px;
-$linkColor: #0cbff2;
-$linkColorHover: #79dcf8;
+$linkColor: #7dc6bf;
+$linkColorHover: #80cbc4;
 $selectionBackgroundColor: rgba(255, 255, 255, 1);
 
 
@@ -94,24 +69,21 @@ $selectionBackgroundColor: rgba(255, 255, 255, 1);
 .reveal blockquote {
   width: 100%;
 }
-.reveal .progress {
-  background: #000;
-}
 .reveal pre {
   width: 100%;
   font-size: 0.75em;
-  font-family: Hack, monospace, sans-serif;
+  font-family: PragmataPro, monospace, sans-serif;
   line-height: 1.8em;
   box-shadow: none; 
 }
 .reveal code {
   font-size: 0.85em;
-  font-family: Hack, monospace, sans-serif;
+  font-family: PragmataPro, monospace, sans-serif;
 }
 .reveal pre code {
   padding: 25px;
   max-height: 500px;
-  background: #000;
+  background: $backgroundColor;
   color: $mainColor;
   border: 4px solid $linkColor;
 }
@@ -129,20 +101,22 @@ $selectionBackgroundColor: rgba(255, 255, 255, 1);
   box-shadow: none;
 }
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #087c9d;
+  border-right-color: $backgroundColor;
 }
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #087c9d;
+  border-left-color: $backgroundColor;
 }
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #087c9d;
+  border-bottom-color: $backgroundColor;
 }
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #087c9d;
+  border-top-color: $backgroundColor;
 }
 .reveal .progress {
-  background: #000;
+  background: $backgroundColor;
 }
 .reveal .slide-number {
   color: $linkColor;
+  background: $backgroundColor;
+  font-family: $mainFont;
 }
