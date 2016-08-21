@@ -13,15 +13,17 @@
 	   beyond the edge of the printed page, and prevents
 	   unnecessary background images from printing */
 	html {
-	  background: #000;
-	  background-color: #000;
+	  background: #fff;
+	  background-color: #fff;
 		width: auto;
 		height: auto;
 		overflow: visible;
 	}
 	body {
-	  background: #000;
-	  background-color: #000;
+	  background: #fff;
+	  background-color: #fff;
+	}
+	.reveal body {
 		font-size: 16pt;
 		width: auto;
 		height: auto;
@@ -46,19 +48,19 @@
 
 	/* SECTION 3: Set body font face, size, and color.
 	   Consider using a serif font for readability. */
-	body, p, td, li, div {
+	.reveal body, .reveal p, .reveal td, .reveal li, .reveal div {
 		font-size: 16pt !important;
-    font-family: "charterregular", serif;
-    color: #fff5df;
+    font-family: "PragmataPro", serif;
+    color: #000;
 	}
 
 	/* SECTION 4: Set heading font face, sizes, and color.
 	   Differentiate your headings from your body text.
 	   Perhaps use a large sans-serif for distinction. */
-	h1, h2, h3, h4, h5, h6 {
+	.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
 		height: auto;
-	  color: #fef200;
-	  font-family: "Fira Sans", sans-serif;
+	  color: #000;
+	  font-family: "PragmataPro", sans-serif;
 	  font-weight: 700;
 	  line-height: 1.2;
 	  letter-spacing: normal;
@@ -69,17 +71,17 @@
 	}
 
 	/* Need to reduce the size of the fonts for printing */
-	h1 { font-size: 22pt !important;  }
-	h2 { font-size: 20pt !important; }
-	h3 { font-size: 18pt !important; }
-	h4 { font-size: 16pt !important; }
+	.reveal h1 { font-size: 22pt !important; }
+	.reveal h2 { font-size: 20pt !important; }
+	.reveal h3 { font-size: 18pt !important; }
+	.reveal h4 { font-size: 16pt !important; }
 
 	/* SECTION 5: Make hyperlinks more usable.
 	   Ensure links are underlined, and consider appending
 	   the URL to the end of the link for usability. */
-	a:link,
-	a:visited {
-		color: #0cbff2 !important;
+	.reveal a:link,
+	.reveal a:visited {
+		color: #000 !important;
   	text-decoration: none;
 	}
 	/*
@@ -93,7 +95,7 @@
 
 
 	/* SECTION 6: more reveal.js specific additions by @skypanther */
-	ul, ol, div, p {
+	.revealul, .reveal ol, .reveal div, .reveal p {
 		visibility: visible;
 		position: static;
 		width: auto;
@@ -110,7 +112,7 @@
 	}
 	.reveal pre code {
 		padding: 20px;
-		border: 1px solid #ddd;
+		border: none;
 	}
 	.reveal blockquote {
 		margin: 20px 0;
@@ -193,8 +195,9 @@
 	.reveal section img {
 		display: block;
 		margin: 15px 0px;
-		background: rgba(255,255,255,1);
-		border: 1px solid #666;
+		background: #263238;
+		background-color: #263238;
+		border: none;
 		box-shadow: none;
 	}
 
