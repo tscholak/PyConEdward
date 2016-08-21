@@ -36,7 +36,7 @@ $heading2Size: 2.11em;
 $heading3Size: 1.55em;
 $heading4Size: 1em;
 $heading1TextShadow: none;
-$blockMargin: 20px;
+$blockMargin: 1ch;
 $linkColor: #7dc6bf;
 $linkColorHover: #80cbc4;
 $selectionBackgroundColor: rgba(255, 255, 255, 1);
@@ -57,6 +57,21 @@ $selectionBackgroundColor: rgba(255, 255, 255, 1);
 .reveal .slides {
   text-align: left;
 }
+.reveal ol,
+.reveal dl {
+  margin: 0; }
+.reveal ul {
+  margin: 0 0 0 4ch; }
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  margin-left: 4ch; }
+.reveal dd {
+  margin-left: 4ch; }
+.reveal ol,
+.reveal dl {
+  list-style-position: inside; }
 .reveal ul {
   list-style-type: none;
 }
@@ -81,7 +96,7 @@ $selectionBackgroundColor: rgba(255, 255, 255, 1);
   font-family: PragmataPro, monospace, sans-serif;
 }
 .reveal pre code {
-  padding: 25px;
+  padding: 2ch;
   max-height: 500px;
   background: $backgroundColor;
   color: $mainColor;
@@ -113,10 +128,22 @@ $selectionBackgroundColor: rgba(255, 255, 255, 1);
   border-top-color: $backgroundColor;
 }
 .reveal .progress {
-  background: $backgroundColor;
+  background: rgba(0, 0, 0, 0);
 }
 .reveal .slide-number {
   color: $linkColor;
-  background: $backgroundColor;
+  background: rgba(0, 0, 0, 0);
   font-family: $mainFont;
+}
+
+.reveal .katex {
+  font-size: 1.2em !important;
+}
+.reveal .katex.inline:not(first) {
+  margin-left: 0em;
+}
+.reveal .katex.display {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
 }
