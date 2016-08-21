@@ -111,6 +111,7 @@ module.exports = function(grunt) {
 				'reveal.js/lib/**',
 				'images/**',
 				'reveal.js/plugin/**',
+				'plugin/**',
 				'**.md'
 			]
 		},
