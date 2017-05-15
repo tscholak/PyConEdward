@@ -3,4 +3,4 @@
 	url = https://github.com/hakimel/reveal.js.git
 [submodule "plugin/math-katex"]
 	path = plugin/math-katex
-	url = git@github.com:j13z/reveal.js-math-katex-plugin.git
+	url = git@github.com:tscholak/reveal.js-math-katex-plugin.git
