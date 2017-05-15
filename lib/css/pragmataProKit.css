@@ -1,0 +1,46 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3368564, 2017-04-03T22:03:21-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: PragmataPro-Bold by FSD
+ * URL: http://www.myfonts.com/fonts/fsd/pragmata-pro/bold/
+ * 
+ * Webfont: PragmataPro-BoldItalic by FSD
+ * URL: http://www.myfonts.com/fonts/fsd/pragmata-pro/bold-italic/
+ * 
+ * Webfont: PragmataPro-Italic by FSD
+ * URL: http://www.myfonts.com/fonts/fsd/pragmata-pro/italic/
+ * 
+ * Webfont: PragmataPro by FSD
+ * URL: http://www.myfonts.com/fonts/fsd/pragmata-pro/regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3368564
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2009 by Fabrizio Schiavi - http://www.fsd.it/. All rights reserved.
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/336674");
+
+  
+@font-face {font-family: 'PragmataPro-Bold';src: url('webfonts/336674_0_0.eot');src: url('webfonts/336674_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336674_0_0.woff2') format('woff2'),url('webfonts/336674_0_0.woff') format('woff'),url('webfonts/336674_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'PragmataPro-BoldItalic';src: url('webfonts/336674_1_0.eot');src: url('webfonts/336674_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336674_1_0.woff2') format('woff2'),url('webfonts/336674_1_0.woff') format('woff'),url('webfonts/336674_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'PragmataPro-Italic';src: url('webfonts/336674_2_0.eot');src: url('webfonts/336674_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336674_2_0.woff2') format('woff2'),url('webfonts/336674_2_0.woff') format('woff'),url('webfonts/336674_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'PragmataPro';src: url('webfonts/336674_3_0.eot');src: url('webfonts/336674_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/336674_3_0.woff2') format('woff2'),url('webfonts/336674_3_0.woff') format('woff'),url('webfonts/336674_3_0.ttf') format('truetype');}
+ 
