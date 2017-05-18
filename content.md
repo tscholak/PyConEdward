@@ -85,8 +85,6 @@ The PP system that is discussed in this tutorial is **Edward**.
 
 Edward is a PP framework developed at Columbia University. It supports **probabilistic reasoning at scale**.
 
-[//]: # (Edward works for large datasets and for complex probabilistic models.)
-
 Edward uses state-of-the-art techniques in computing coming from the deep learning community.
 
 Edward provides an expressive **PP language** to declare parameterized models that can simulate the observed data, or data like it.
@@ -124,14 +122,9 @@ array([0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0,
 43
 ```
 
-[//]: # (Shouldn't a fair coin show 50 heads in 100 tosses?)
-[//]: # (No, even a fair coin could show more or less than 50 heads in 100 tosses, just by chance.)
-
 
 
 ### What Can We Say About The Fairness of The Coin?
-
-[//]: # (We are constructing a simple model of how the universe could be arranged in such a way that we ended up seeing this series of coin toss outcomes, because we assume that random chance was involved and things could have turned out differently.)
 
 1. **Posit A Generative Model.** Start with a simple story about how the data is generated. How could things be arranged that we end up seeing coin tosses like the ones observed? -- **Forward direction**.
 
@@ -172,8 +165,6 @@ Essentially, all models are wrong, but some are useful.
 
 Our story expressed in terms of **probability distributions**:
 
-[//]: $ (Probability is a measure of the degree of certainty about values. Probability distributions reflect our degree of belief.)
-
 $$ p(\text{params}, \text{data}) = p(\text{params}) \times p(\text{data} | \text{params}) $$
 
 $\text{params}$: fairness of the coin.
@@ -182,19 +173,9 @@ $\text{data}$: coin tosses.
 
 $p(\text{params})$: **prior probability** of a certain fairness.
 
-[//]: $ (What do we think about the fairness of the coin before seeing any data?)
-
 $p(\text{data} | \text{params})$: **conditional probability** that the data is observed **given that** the coin has a certain fairness.
 
-[//]: $ (For a given fairness, how do we think the coin tosses will be distributed?)
-
-[//]: $ (The assumptions about how the structure of the world gives rise to the statistical distribution of data is in the likelihood.)
-
-[//]: $ (The likelihood is a parameterized set of instructions for simulating data.)
-
 $p(\text{params}, \text{data})$: **joint probability** that **both** the data is observed **and** the coin has a certain fairness.
-
-[//]: $ (The Bayesian approach is to produce a distribution over both, the parameters and the data. That distribution is composed from a distribution on the parameters called the "prior" and the so-called "likelihood" that describes the distribution of the data for every possible parameter setting.)
 
 
 
@@ -329,8 +310,6 @@ This is possible only if the posterior can be derived by algebraic manipulation.
 
 
 ### Inference of The Fairness of A Coin
-
-[//]: # (Lets assume we couldn't solve this by hand which is usually the case. The use of a computational approach makes us indifferent to mathematical tractability.)
 
 Approximate inference in the **PP language** Edward:
 
